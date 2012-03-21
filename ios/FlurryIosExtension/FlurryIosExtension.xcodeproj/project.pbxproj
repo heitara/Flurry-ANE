@@ -1,0 +1,263 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20046C43147FB6630032506A /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20046C42147FB6630032506A /* FlashRuntimeExtensions.h */; };
+		20046C46147FB6DF0032506A /* FlurryAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 20046C44147FB6DF0032506A /* FlurryAnalytics.h */; };
+		20046C47147FB6DF0032506A /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20046C45147FB6DF0032506A /* libFlurryAnalytics.a */; };
+		7940BB87144F2A1A00F7087E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7940BB86144F2A1A00F7087E /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		7940BB8D144F2A1A00F7087E /* FlurryIosExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7940BB8C144F2A1A00F7087E /* FlurryIosExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20046C42147FB6630032506A /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
+		20046C44147FB6DF0032506A /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
+		20046C45147FB6DF0032506A /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
+		20046C48147FC9690032506A /* libFlurryAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFlurryAnalytics.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7940BB86144F2A1A00F7087E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7940BB8A144F2A1A00F7087E /* FlurryIosExtension-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlurryIosExtension-Prefix.pch"; sourceTree = "<group>"; };
+		7940BB8C144F2A1A00F7087E /* FlurryIosExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlurryIosExtension.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7940BB80144F2A1A00F7087E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7940BB87144F2A1A00F7087E /* Foundation.framework in Frameworks */,
+				20046C47147FB6DF0032506A /* libFlurryAnalytics.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7940BB78144F2A1A00F7087E = {
+			isa = PBXGroup;
+			children = (
+				20046C44147FB6DF0032506A /* FlurryAnalytics.h */,
+				20046C45147FB6DF0032506A /* libFlurryAnalytics.a */,
+				20046C42147FB6630032506A /* FlashRuntimeExtensions.h */,
+				7940BB88144F2A1A00F7087E /* FlurryIosExtension */,
+				7940BB85144F2A1A00F7087E /* Frameworks */,
+				7940BB84144F2A1A00F7087E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7940BB84144F2A1A00F7087E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20046C48147FC9690032506A /* libFlurryAnalytics.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7940BB85144F2A1A00F7087E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7940BB86144F2A1A00F7087E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7940BB88144F2A1A00F7087E /* FlurryIosExtension */ = {
+			isa = PBXGroup;
+			children = (
+				7940BB8C144F2A1A00F7087E /* FlurryIosExtension.m */,
+				7940BB89144F2A1A00F7087E /* Supporting Files */,
+			);
+			path = FlurryIosExtension;
+			sourceTree = "<group>";
+		};
+		7940BB89144F2A1A00F7087E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7940BB8A144F2A1A00F7087E /* FlurryIosExtension-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7940BB81144F2A1A00F7087E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20046C43147FB6630032506A /* FlashRuntimeExtensions.h in Headers */,
+				20046C46147FB6DF0032506A /* FlurryAnalytics.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7940BB82144F2A1A00F7087E /* FlurryIosExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7940BB90144F2A1A00F7087E /* Build configuration list for PBXNativeTarget "FlurryIosExtension" */;
+			buildPhases = (
+				7940BB7F144F2A1A00F7087E /* Sources */,
+				7940BB80144F2A1A00F7087E /* Frameworks */,
+				7940BB81144F2A1A00F7087E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlurryIosExtension;
+			productName = FlurryIosExtension;
+			productReference = 20046C48147FC9690032506A /* libFlurryAnalytics.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7940BB7A144F2A1A00F7087E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Stick Sports Ltd";
+			};
+			buildConfigurationList = 7940BB7D144F2A1A00F7087E /* Build configuration list for PBXProject "FlurryIosExtension" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7940BB78144F2A1A00F7087E;
+			productRefGroup = 7940BB84144F2A1A00F7087E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7940BB82144F2A1A00F7087E /* FlurryIosExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7940BB7F144F2A1A00F7087E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7940BB8D144F2A1A00F7087E /* FlurryIosExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7940BB8E144F2A1A00F7087E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7940BB8F144F2A1A00F7087E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7940BB91144F2A1A00F7087E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "${SRCROOT}/FlurryAnalytics";
+				CONFIGURATION_TEMP_DIR = "${SRCROOT}/build";
+				DSTROOT = "${SRCROOT}";
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlurryIosExtension/FlurryIosExtension-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = FlurryAnalytics;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7940BB92144F2A1A00F7087E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "${SRCROOT}/FlurryAnalytics";
+				CONFIGURATION_TEMP_DIR = "${SRCROOT}/build";
+				DSTROOT = "${SRCROOT}";
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlurryIosExtension/FlurryIosExtension-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = FlurryAnalytics;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7940BB7D144F2A1A00F7087E /* Build configuration list for PBXProject "FlurryIosExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7940BB8E144F2A1A00F7087E /* Debug */,
+				7940BB8F144F2A1A00F7087E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7940BB90144F2A1A00F7087E /* Build configuration list for PBXNativeTarget "FlurryIosExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7940BB91144F2A1A00F7087E /* Debug */,
+				7940BB92144F2A1A00F7087E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7940BB7A144F2A1A00F7087E /* Project object */;
+}

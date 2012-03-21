@@ -1,0 +1,95 @@
+Flurry Adobe AIR native extension. Works with Android and iOS.
+
+version 1.0 
+
+Copyright (c) 2012 Lancelotmobile.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+========================= legacy readme =================================
+h1. Air Native Extension for  Flurry analytics on iOS
+
+This is an "Air native extension":http://www.adobe.com/devnet/air/native-extensions-for-air.html for "Flurry analytics":http://www.flurry.com/ on the iOS platform.
+
+h3. Getting Started
+
+This extension doesn't include a binary compiled native extension due to licensing limitations of the Flurry analytics code. Instead you should download the Flurry analytics code from your Flurry account and add it to this project, then run the build script to create the extension.
+
+h3. Building
+
+* Download the Flurry analytics code from your Flurry account.
+* Add the downloaded files FlurryAnalytics.h & libFlurryAnalytics.a to the ios/FlurryIosExtension/FlurryAnalytics folder in the project.
+* Add the FlashRuntimeExtensions.h file from the Adobe Air sdk to the ios/FlurryIosExtension folder in the project.
+* Create a copy of the build/example.build.config file in the build folder, calling it build.config and change the properties in this file to match your system.
+** A certificate is required by the build script. This may be a self-signed certificate created by Adobe Air.
+* Run the ant build script build.xml. This creates the native extension, and associated swc file, inside the bin folder.
+
+h3. Using the extension
+
+h4. Start a Flurry session
+
+At its simplest, you initialize the extension with your application's identifier as follows
+
+@Flurry.startSession( "your flurry id" );@
+
+You should only start the session once, after which you can log as many events as you wish.
+
+h4. Log a simple event
+
+You may then log events with Flurry like this
+
+@Flurry.logEvent( "User did something" );@
+
+h4. Log an event with parameters
+
+You can pass parameters through to a Flurry event via a simple object, as follows
+
+@Flurry.logEvent( "Screen resolution", { width : Capabilities.screenResolutionX, height : Capabilities.screenResolutionY, dpi : Capabilities.screenDPI } );@
+
+h4. Log a timed event
+
+Flurry will also log timed events. This is a two-step process. You first start the timed event.
+
+@Flurry.startTimedEvent( "User playing game" );@
+
+Then, later, you end the timed event.
+
+@Flurry.endTimedEvent( "User playing game" );@
+
+h4. Log an error
+
+You can also log errors with Flurry
+
+@Flurry.logError( "NullPointer", "Attempt to use a reference to a null pointer" );@
+
+h3. More info
+
+That's just a starter. All the features of the Flurry api have been implemented. Read the enclosed documentation for all the features.
+
+h3. Developers
+
+* "Stick Sports":http://www.sticksports.com/
+
+h2. License
+
+Air Native Extension for  Flurry analytics on iOS
+.................................................
+
+Author: Richard Lord
+Owner: Stick Sports Ltd.
+http://www.sticksports.com
+
+Copyright (c) 2011, Stick Sports Ltd.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+* Neither the name of Stick Sports Ltd. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+  
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
